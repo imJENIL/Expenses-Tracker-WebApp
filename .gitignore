@@ -31,3 +31,14 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# My SQL Data
+mysql-data/
+
+# Docker / DB junk
+data/
+*.log
+*.db
+
+# OS junk
+.DS_Store

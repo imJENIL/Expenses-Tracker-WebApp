@@ -1,0 +1,6 @@
+mysql-data/
+data/
+*.log
+*.db
+target/
+node_modules/
