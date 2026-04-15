@@ -1,58 +1,135 @@
-![Language](https://img.shields.io/badge/language-Java%20-blue.svg)
-![Technologies](https://img.shields.io/badge/technologies-Spring_boot%20-green.svg)
-![Technologies](https://img.shields.io/badge/technologies-Spring_MVC%20-green.svg)
-![Technologies](https://img.shields.io/badge/technologies-Spring_Security%20-green.svg)
-![Technologies](https://img.shields.io/badge/technologies-Spring_Data_jpa%20-green.svg)
-![Technologies](https://img.shields.io/badge/technologies-Thymeleaf_&_Bootstrap%20-purple.svg)
+![Language](https://img.shields.io/badge/language-Java-blue.svg)
+![Framework](https://img.shields.io/badge/framework-Spring%20Boot-green.svg)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-Jenkins-blue.svg)
+![Security](https://img.shields.io/badge/security-OWASP%20%7C%20Trivy-red.svg)
+![Container](https://img.shields.io/badge/container-Docker-blue.svg)
 
-# Expenses-Tracker-WebApp
-## Overview
-The Expenses Tracker App is a robust financial management solution developed using cutting-edge technologies such as Spring Boot, Spring Security, and MySQL. With user authentication and authorization features, users can securely sign up, sign in, and perform CRUD operations on their expenses. The app's intuitive interface, powered by Thymeleaf and Bootstrap, ensures a seamless user experience. The filtering functionality allows users to efficiently organize and analyze their financial data. Explore the power of streamlined expense tracking and financial control with this feature-rich application.<br> (Screenshots below for more illustration)
+# Expense Tracker CI/CD Project
 
-## Technologies Used
-- Java
-- Spring boot
-- Spring MVC
-- Spring Security
-- Spring Data (JPA)
-- MySQL
-- Thymeleaf
-- Bootstrap
+## 🚀 Overview
+This project is a **Expense Tracker Web Application** enhanced with a complete **CI/CD pipeline using Jenkins**.
 
-## Features
-- **User Authentication and Authorization:** Securely sign up, sign in, and access the app with built-in authentication and authorization.
-- **CRUD Operations:** Perform essential financial tracking actions such as adding, reading, updating, and deleting expenses.
-- **Filtering:** Utilize the filtering feature to efficiently sort and view expenses based on various criteria.
+It demonstrates real-world DevOps practices including:
+- Automated build and deployment  
+- Code quality analysis (SonarQube)  
+- Security scanning (OWASP & Trivy)  
+- Containerization using Docker  
 
-## Getting Started
-1. **Clone the Repository:**
-`git clone https://github.com/your-username/expenses-tracker.git`
+---
 
-2. **Configure Database:**
-Set up MySQL database and update the application.properties file with your database configuration.
+## 🧱 Tech Stack
 
-3. **Build and Run:**
-Build the project using your preferred IDE or with Maven:
-`mvn clean install`.
+### Backend
+- Java  
+- Spring Boot  
+- Spring MVC  
+- Spring Security  
+- Spring Data JPA  
 
-4. **Run the application:**
-`java -jar target/expenses-tracker.jar`.
+### Frontend
+- Thymeleaf  
+- Bootstrap  
 
-5. **Access the App:**
-Open your web browser and navigate to `http://localhost:8080`.
+### Database
+- MySQL  
 
-## ScreenShots
-![Example Image](screenshots/1.png) <br>
-![Example Image](screenshots/2-2.png) <br>
-![Example Image](screenshots/3-3.png) <br>
-![Example Image](screenshots/4-4.png) <br>
-![Example Image](screenshots/5-5.png) <br>
-![Example Image](screenshots/6-6.png) <br>
-![Example Image](screenshots/7.png) <br>
-![Example Image](screenshots/8.png) <br>
+### DevOps / CI-CD
+- Jenkins Pipeline  
+- SonarQube  
+- OWASP Dependency Check  
+- Trivy  
+- Docker & Docker Compose  
 
-## Contributions
-Contributions are welcome! If you find a bug or have suggestions for improvement, feel free to open an issue or create a pull request.
+---
 
-## License
+## 🔄 CI/CD Pipeline Flow
+![PipelineFlow](screenshots/PipelineFlow.png)
+
+
+---
+
+## ⚙️ Features
+
+- 🔐 User Authentication & Authorization  
+- 📊 Expense CRUD Operations  
+- 🔍 Filtering & Expense Analysis  
+- 🛡️ Security scanning with OWASP & Trivy  
+- 📦 Dockerized application  
+- 🔄 Automated CI/CD pipeline  
+
+---
+
+## 📸 CI/CD Proof
+
+### ✅ Jenkins Pipeline
+![Jenkins](screenshots/jenkins-success.png)
+
+### 📜 Build Logs
+![Console](screenshots/jenkins-console.png)
+
+### 📊 SonarQube Analysis
+![Sonar](screenshots/sonar-dashboard.png)
+
+### 🐳 Running Containers
+![Docker](screenshots/docker-running.png)
+
+### 🌐 Application Running
+![App](screenshots/app-running.png)
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone Repository
+git clone 
+```bash
+https://github.com/imJENIL/Expenses-Tracker-WebApp.git
+```
+### 2. 🐳 Run with Docker (Recommended)
+
+Make sure Docker and Docker Compose are installed.
+
+### 3. Start Application
+```bash
+docker-compose up -d --build
+```
+### 4. Access Application
+http://localhost:8081
+
+### 5. 🛑 Stop Application
+```bash
+docker-compose down
+```
+---
+
+## 🎯 What This Project Demonstrates
+
+- End-to-end CI/CD pipeline implementation  
+- Integration of multiple DevOps tools  
+- Secure application deployment workflow  
+- Real-world project structure  
+
+---
+
+## 🙏 Acknowledgment
+
+This project builds upon work from the following repositories:
+
+- Original Application:  
+  👉 https://github.com/mohamed0sawy/Expenses-Tracker-WebApp  
+
+- Docker Implementation Reference:  
+  👉 https://github.com/sneh-create/Expenses-Tracker-WebApp  
+
+CI/CD pipeline integration, enhancements, and deployment setup were implemented by **Jenil Patel**.
+
+---
+
+## 👨‍💻 Author
+
+**Jenil Patel**
+
+---
+
+## 📄 License
 This project is licensed under the MIT License.
