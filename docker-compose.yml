@@ -2,8 +2,7 @@ version: "3.8"
 
 services:
   java_app:
-    build:
-      context: .
+    image: imjenil/expenses-tracking:latest
     container_name: "expensesapp"
     networks:
       - expenses-app-nw
